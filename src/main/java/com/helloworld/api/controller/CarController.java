@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class CarController {
 
     @PostMapping
-    public void create(@RequestBody String req) {
+    public void create(@RequestBody PersonDTO req) {
         System.out.println(req);
     }
 }
