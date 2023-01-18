@@ -24,6 +24,6 @@ public class Car {
     @Column(length = 10, nullable = false)
     private String dataFabricacao;
 
-    private int valor;
+    private double valor;
     private int anoModelo;
 }
