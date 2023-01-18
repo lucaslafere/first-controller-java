@@ -1,5 +1,5 @@
 package com.helloworld.api.dto;
 
-public class PersonDTO {
+public record PersonDTO (String modelo, String fabricante, String dataFabricacao, int valor, int anoModelo) {
     
 }
