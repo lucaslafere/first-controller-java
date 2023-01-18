@@ -5,7 +5,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.helloworld.api.dto.PersonDTO;
+import com.helloworld.api.dto.CarDTO;
+import com.helloworld.api.model.Car;
 import com.helloworld.api.repository.CarRepository;
 
 @RestController
@@ -17,7 +18,7 @@ public class CarController {
     private CarRepository repository;
 
     @PostMapping
-    public void create(@RequestBody PersonDTO req) {
-        repository.save(req);
+    public void create(@RequestBody CarDTO req) {
+        repository.save(new Car(req));
     }
 }
