@@ -13,6 +13,6 @@ public class CarController {
 
     @PostMapping
     public void create(@RequestBody PersonDTO req) {
-        System.out.println(req);
+        System.out.println(req.anoModelo());
     }
 }
