@@ -10,6 +10,6 @@ public class DefaultController {
     
     @GetMapping
     public String Default () {
-        return "This is the main page. I recommend trying a get on /hello or on /api/car";
+        return "This is the main page. I recommend trying a get on /hello. You could also get /api/car to get a list of all cards published, and a post to /api/car to post your car.";
     }
 }
