@@ -10,6 +10,6 @@ public class DefaultController {
     
     @GetMapping
     public String Default () {
-        return "This is the main page";
+        return "This is the main page. I recommend trying a get on /hello or on /api/car";
     }
 }
