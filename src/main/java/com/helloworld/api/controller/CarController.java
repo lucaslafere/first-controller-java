@@ -29,5 +29,6 @@ public class CarController {
     @PostMapping
     public void create(@RequestBody CarDTO req) {
         repository.save(new Car(req));
+        System.out.println(req);
     }
 }
